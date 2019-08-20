@@ -6,3 +6,6 @@ function setCard(){
     console.log(card)
     card.style.color = colorInput.value
 }
+function reset (){
+    location.reload()
+}
