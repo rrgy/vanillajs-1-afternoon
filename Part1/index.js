@@ -71,5 +71,11 @@ function play(clickedId){
     }
 }
 function reset (){
-    board[i] === undefined 
+    let squares = document.getElementsByTagName('td')
+    var playerSpan = document.getElementById('player')
+    for (let i = 0; i < squares.length; i++){
+        squares[i].innerText = ''
+    }
+    playerSpan.innerText = 'X'
+    board.splice(0,9)
 }
